@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class AlgoritmoGenetico {
 
-    public static final String genes = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!.,";
+    public static final String genes = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     public static final String objetivo = "Politecnico Colombiano Jaime Isaza Cadavid";
     private static final Random random = new Random();
 
