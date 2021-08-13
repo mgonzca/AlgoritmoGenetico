@@ -65,6 +65,10 @@ public class AlgoritmoGenetico {
 
     public static void imprimir(String obtenido, Date tiempoInicio) {
         Date time = new Date();
-        System.out.println(String.format("Cadena obtenida: " + obtenido+ ", Fitness: " + fitness(obtenido) + ", Tiempo: " + (time.getTime() - tiempoInicio.getTime()) + " milisegundos" ));
+        System.out.println("---------------------------------------------------------------------------------------");
+        System.out.println(String.format("Cadena obtenida: " + obtenido));
+        System.out.println(String.format("Fitness: " + fitness(obtenido)));
+        System.out.println(String.format("Tiempo: " + (time.getTime() - tiempoInicio.getTime()) + " milisegundos" ));
+        System.out.println("---------------------------------------------------------------------------------------");
     }
 }
