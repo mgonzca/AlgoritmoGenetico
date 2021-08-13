@@ -17,14 +17,10 @@ public class AlgoritmoGenetico {
         while (true) {
             String hijo = algoritmoGenetico.mutar(mejorPadre);
             int hijoFitness = algoritmoGenetico.fitness(hijo);
-            if (mejorFitness >= hijoFitness) {
-                imprimir(hijo, tiempoInicio);
-            }
-            if (hijoFitness >= mejorPadre.length()){
-                imprimir(hijo, tiempoInicio);
+ 	    imprimir(hijo, tiempoInicio);
+            if (hijoFitness >= mejorPadre.length()){               
                 break;
             }
-            mejorFitness = hijoFitness;
             mejorPadre = hijo;
         }
     }
