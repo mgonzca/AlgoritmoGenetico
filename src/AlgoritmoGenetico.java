@@ -12,7 +12,6 @@ public class AlgoritmoGenetico {
         random.setSeed(12345);
         Date tiempoInicio = new Date();
         String mejorPadre = algoritmoGenetico.generarPadre(objetivo.length());
-        int mejorFitness = algoritmoGenetico.fitness(mejorPadre);
         algoritmoGenetico.imprimir(mejorPadre, tiempoInicio);
         while (true) {
             String hijo = algoritmoGenetico.mutar(mejorPadre);
